@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm Rose & Nude Palette for Feminine Wellness */
+    --background: 30 30% 98%;
+    --foreground: 25 20% 20%;
+
+    --card: 30 25% 97%;
+    --card-foreground: 25 20% 20%;
+
+    --popover: 30 25% 97%;
+    --popover-foreground: 25 20% 20%;
+
+    /* Rose Blush Primary */
+    --primary: 350 45% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm Nude Secondary */
+    --secondary: 25 35% 92%;
+    --secondary-foreground: 25 20% 25%;
+
+    /* Sage Green Accent */
+    --accent: 150 25% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Soft Gold Highlight */
+    --highlight: 38 60% 55%;
+    --highlight-foreground: 0 0% 100%;
+
+    --muted: 30 20% 94%;
+    --muted-foreground: 25 15% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 350 45% 65%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(30 30% 98%) 0%, hsl(25 35% 95%) 50%, hsl(350 30% 96%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(25 35% 95%) 0%, hsl(30 30% 98%) 100%);
+    --gradient-rose: linear-gradient(135deg, hsl(350 45% 65%) 0%, hsl(350 50% 70%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(150 25% 45%) 0%, hsl(155 30% 50%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 20% 20% / 0.08);
+    --shadow-medium: 0 8px 30px -6px hsl(25 20% 20% / 0.12);
+    --shadow-glow: 0 0 40px hsl(350 45% 65% / 0.15);
+
+    /* Typography */
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Josefin Sans', system-ui, sans-serif;
+
+    --sidebar-background: 30 25% 97%;
+    --sidebar-foreground: 25 20% 25%;
+    --sidebar-primary: 350 45% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 25 35% 92%;
+    --sidebar-accent-foreground: 25 20% 25%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 350 45% 65%;
+  }
+
+  .dark {
+    --background: 25 20% 8%;
+    --foreground: 30 20% 95%;
+
+    --card: 25 18% 12%;
+    --card-foreground: 30 20% 95%;
+
+    --popover: 25 18% 12%;
+    --popover-foreground: 30 20% 95%;
+
+    --primary: 350 50% 70%;
+    --primary-foreground: 25 20% 10%;
+
+    --secondary: 25 15% 18%;
+    --secondary-foreground: 30 20% 90%;
+
+    --accent: 150 30% 50%;
+    --accent-foreground: 25 20% 10%;
+
+    --highlight: 38 65% 60%;
+    --highlight-foreground: 25 20% 10%;
+
+    --muted: 25 15% 18%;
+    --muted-foreground: 25 15% 60%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 350 50% 70%;
+
+    --sidebar-background: 25 18% 10%;
+    --sidebar-foreground: 30 20% 90%;
+    --sidebar-primary: 350 50% 70%;
+    --sidebar-primary-foreground: 25 20% 10%;
+    --sidebar-accent: 25 15% 16%;
+    --sidebar-accent-foreground: 30 20% 90%;
+    --sidebar-border: 25 15% 18%;
+    --sidebar-ring: 350 50% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-16 md:px-8 md:py-24 lg:py-32;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-rose);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+}
