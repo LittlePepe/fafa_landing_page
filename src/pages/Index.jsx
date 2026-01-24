@@ -5,6 +5,7 @@ import MethodSection from "@/components/landing/MethodSection";
 import ForWhoSection from "@/components/landing/ForWhoSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import ProductCards from "@/components/landing/ProductCards";
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
@@ -24,6 +25,9 @@ const Index = () => {
             </section>
             <section id="depoimentos">
                 <TestimonialsSection />
+            </section>
+            <section id="produtos">
+                <ProductCards />
             </section>
             <CTASection />
             <Footer />

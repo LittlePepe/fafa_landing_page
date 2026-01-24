@@ -20,11 +20,11 @@ const buttonVariants = cva(
                 highlight: "bg-highlight text-highlight-foreground hover:bg-highlight/90 shadow-md hover:shadow-lg",
             },
             size: {
-                default: "h-11 px-6 py-2.5",
-                sm: "h-9 rounded-md px-4 text-sm",
-                lg: "h-14 rounded-xl px-10 text-lg",
-                xl: "h-16 rounded-xl px-12 text-xl",
-                icon: "h-11 w-11",
+                default: "h-11 px-6 py-2.5 rounded-pill",
+                sm: "h-9 px-4 text-sm rounded-pill",
+                lg: "h-14 px-10 text-lg rounded-pill",
+                xl: "h-16 px-12 text-xl rounded-pill",
+                icon: "h-11 w-11 rounded-full",
             },
         },
         defaultVariants: {
