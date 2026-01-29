@@ -3,47 +3,47 @@ import DomeGallery from './DomeGallery';
 
 const testimonials = [
   {
-    src: '/src/assets/depoimentos/1.jpeg',
+    src: '/images/depoimentos/1.jpeg',
     alt: 'Mariana S., 38 anos',
     caption: 'Mariana S., 38 anos - Perdi 18kg e finalmente entendi que o problema nunca foi a dieta'
   },
   {
-    src: '/src/assets/depoimentos/2.jpeg',
+    src: '/images/depoimentos/2.jpeg',
     alt: 'Patrícia L., 45 anos',
     caption: 'Patrícia L., 45 anos - Aprendi a identificar meus gatilhos e hoje tenho uma relação livre com a comida (-12kg)'
   },
   {
-    src: '/src/assets/depoimentos/3.jpeg',
+    src: '/images/depoimentos/3.jpeg',
     alt: 'Fernanda C., 32 anos',
     caption: 'Fernanda C., 32 anos - O efeito sanfona era meu pesadelo. Já faz 2 anos que mantenho meu peso ideal (-15kg)'
   },
   {
-    src: '/src/assets/depoimentos/4.jpeg',
+    src: '/images/depoimentos/4.jpeg',
     alt: 'Juliana M., 41 anos',
     caption: 'Juliana M., 41 anos - Emagreci sem fazer dieta. Quando você trata a mente, o corpo segue (-22kg)'
   },
   {
-    src: '/src/assets/depoimentos/5.jpeg',
+    src: '/images/depoimentos/5.jpeg',
     alt: 'Carla R., 35 anos',
     caption: 'Carla R., 35 anos - Chorei na primeira sessão quando entendi de onde vinha minha compulsão (-10kg)'
   },
   {
-    src: '/src/assets/depoimentos/6.jpeg',
+    src: '/images/depoimentos/6.jpeg',
     alt: 'Amanda B., 29 anos',
     caption: 'Amanda B., 29 anos - Passei a vida lutando contra meu corpo. Hoje somos parceiros (-14kg)'
   },
   {
-    src: '/src/assets/depoimentos/7.jpeg',
+    src: '/images/depoimentos/7.jpeg',
     alt: 'Beatriz S., 36 anos',
     caption: 'Beatriz S., 36 anos - A transformação começou na mente e refletiu no corpo (-16kg)'
   },
   {
-    src: '/src/assets/depoimentos/8.jpeg',
+    src: '/images/depoimentos/8.jpeg',
     alt: 'Camila F., 33 anos',
     caption: 'Camila F., 33 anos - Aprendi a me amar e o peso foi consequência (-13kg)'
   },
   {
-    src: '/src/assets/depoimentos/9.jpeg',
+    src: '/images/depoimentos/9.jpeg',
     alt: 'Daniela M., 40 anos',
     caption: 'Daniela M., 40 anos - Finalmente encontrei paz com meu corpo e com a comida (-19kg)'
   }
